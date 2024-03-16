@@ -19,6 +19,9 @@ html {
     /* background-image: linear-gradient(#011627 20%, #F9865D, #F06D7A, #D46197, #A660AB, #6763B0, #006284, #1072C4); */
     
 }
+body {
+    min-width: 1000px;
+}
 /* test edit  again*/
 h2 {
     font-size: 50px;
@@ -290,7 +293,7 @@ p {
 
 .wrapper{
   display: flex;
-  max-width: 1200px;
+  max-width: 100%;
   position: relative;
 }
 .wrapper i{
@@ -336,31 +339,21 @@ p {
   pointer-events: none;
 }
 .carousel img{
-  height: 340px;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   user-select: none;
   margin-left: 14px;
-  width: calc(100% / 3);
+  width: 50%;
 }
 .carousel img:first-child{
   margin-left: 0px;
-}
-@media screen and (max-width: 900px) {
-  .carousel img{
-    width: calc(100% / 2);
-  }
-}
-@media screen and (max-width: 550px) {
-  .carousel img{
-    width: 100%;
-  }
 }
 </style>
 </head>
 <body>
     <div class="section-div" id="header">
         <a href="https://pitchillinois.web.illinois.edu/index.html"><img src="https://pitchillinois.web.illinois.edu/Images/logoimage.png" style="position: absolute; width: 12%; height: auto; left: 0; top: 0;"></a>
-        <nav class="topnav">
+        <nav class="topnav" style="margin-left: 100px">
             <a href="#mission">About</a>
             <a href="#details">Details</a>
             <a href="#schedule">Schedule</a>
@@ -373,21 +366,21 @@ p {
         <h3 style="color: white; font-family: 'Courier New', monospace; font-size: 60px">build <span style="color: #F9865D;">tomorrow.</span></h3>
         <br><h4 style="color: white; font-family: 'Courier New', monospace; font-size: 60px; margin-top: 2%;">University Laboratory High School >>> Champaign, Illinois</h4>
         <h4 style="color: #F9865D; font-family: 'Courier New', monospace; font-size: 30px;">February 24, 2024</h4>
-        <div class="register-button"><a href="https://forms.gle/Dva6viYWvstDpgD18" target="_blank">Register!</a></div>
     </div>
     <div class="section-div">
+        <h4 class="animated-text" style="text-align: center; font-size: 50px; margin-bottom: 50px;">Thank you to all who contributed to our event!</h4>
         <div class="wrapper" style="justify-content: center; align-items: center;">
             <i id="left" class="fa-solid fa-angle-left"></i>
-            <div class="carousel">
-              <img src="https://pitchillinois.org/Images/brainstormpic.png" alt="img" draggable="false">
-              <img src="https://pitchillinois.org/Images/brainstormpic2.png" alt="img" draggable="false">
-              <img src="https://pitchillinois.org/Images/snacktime.png" alt="img" draggable="false">
-              <img src="https://pitchillinois.org/Images/lunchpic.png" alt="img" draggable="false">
-              <img src="https://pitchillinois.org/Images/visualizationpic1.png" alt="img" draggable="false">
-              <img src="https://pitchillinois.org/Images/visualizationpic2.png" alt="img" draggable="false">
-              <img src="https://pitchillinois.org/Images/presentationpic.png" alt="img" draggable="false">
-              <img src="https://pitchillinois.org/Images/winnerpic.png" alt="img" draggable="false">
-              <img src="https://pitchillinois.org/Images/grouppic.png" alt="img" draggable="false">
+            <div class="carousel" style="justify-content: center; align-items: center;">
+              <img src="Images/brainstormpic.png" alt="img" draggable="false">
+              <img src="Images/brainstormpic2.png" alt="img" draggable="false">
+              <img src="Images/snacktime.png" alt="img" draggable="false">
+              <img src="Images/lunchpic.png" alt="img" draggable="false">
+              <img src="Images/visualizationpic1.png" alt="img" draggable="false">
+              <img src="Images/visualizationpic2.png" alt="img" draggable="false">
+              <img src="Images/presentationpic.png" alt="img" draggable="false">
+              <img src="Images/winnerpic.png" alt="img" draggable="false">
+              <img src="Images/grouppic.png" alt="img" draggable="false">
             </div>
             <i id="right" class="fa-solid fa-angle-right"></i>
         </div>
