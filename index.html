@@ -34,10 +34,20 @@ p {
     font-family: 'Open Sans', sans-serif;
     color: white;
 }
-
+a:link, a:visited {
+    text-decoration: none;
+}
 a:hover, a:active {
-    color: white;
-    font-size: 110%;
+    text-decoration: underline;
+}
+a.biglink:link, a.biglink:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a.biglink:hover, a.biglink:active {
+    color: #F06D7A;
+    text-decoration: underline;
 }
     
 .section-div {
@@ -65,11 +75,16 @@ a:hover, a:active {
     padding-top: 4%;
 }
 
-.topnav a{
+.topnav a:link, a:visited {
     text-decoration: none;
     color: #F06D7A;
 }
 
+.topnav a:hover, a:active {
+    text-decoration: underline;
+    color: white;
+}
+    
 .animated-text {
     background: linear-gradient(to right, #F06D7A, #F9865D, #A660AB, #D46197, #F06D7A);
     -webkit-background-clip: text;
@@ -370,7 +385,7 @@ a:hover, a:active {
         <h1 style="font-size: 150px; font-family: 'Poiret One', cursive; color: #F06D7A; margin-top: 5%;"><b>pitchillinois:</b></h1>
         <h3 style="color: white; font-family: 'Courier New', monospace; font-size: 60px">build <span style="color: #F9865D;">tomorrow.</span></h3>
         <br><h4 style="color: #F9865D; font-family: 'Courier New', monospace; font-size: 42px; ">Urbana, Illinois</h4>
-        <a href="https://forms.gle/63duUaWBvhWaH8MBA" style="color: #F06D7A; font-family: 'Poiret One', cursive; font-size: 60px; margin-top: 2%;">2025 Early Access Mailing List </a>
+        <a class = "biglink" href="https://forms.gle/63duUaWBvhWaH8MBA" style= "font-family: 'Poiret One', cursive; font-size: 42px; margin-top: 2%;"><b>2025 Early Access Mailing List</b></a>
         <!--<h4 style="color: #F9865D; font-family: 'Courier New', monospace; font-size: 30px;">February 24, 2024</h4>-->
     </div>
     
@@ -383,7 +398,7 @@ a:hover, a:active {
         </div>
     </div>
     <div class="section-div">
-        <h4 class="animated-text" style="text-align: center; font-size: 50px; margin-bottom: 50px;">Thank you to all who contributed to PitchIllinois 2024!</h4>
+        <h4 class="animated-text" style="text-align: center; font-size: 50px; margin-bottom: 50px;">PitchIllinois 2024 Photo Gallery</h4>
         <!--<h4 style="color: #F9865D; font-family: 'Courier New', monospace; font-size: 30px;">February 24, 2024</h4>-->
         <div class="wrapper" style="justify-content: center; align-items: center;">
             <i id="left" class="fa-solid fa-angle-left"></i>
@@ -402,7 +417,7 @@ a:hover, a:active {
         </div>
     </div>
     <div class="section-div" id="details">
-        <h2 class="underline">2024 Details</h2>
+        <h2 class="underline">Details</h2>
         <p style="text-align: center; margin-top: 5%">PitchIllinois will be held on <b>February 24, 2024</b> from 8:30am-6pm at the <b>University Laboratory High School and neighboring facilities</b> in Urbana, Illinois. More details to come.</p>
         <div class="div-center">
             <div class="details-container">
@@ -449,7 +464,7 @@ a:hover, a:active {
                 </tr>
                 <tr>
                     <td class="table-entry">11:00 </td>
-                    <td class="table-entry">Snack/Event Break(?)</td>
+                    <td class="table-entry">Snack/Event Break</td>
                 </tr>
                 <tr>
                     <td class="table-entry">12:30 </td>
@@ -457,7 +472,7 @@ a:hover, a:active {
                 </tr>
                 <tr>
                     <td class="table-entry">3:00 </td>
-                    <td class="table-entry">Snack/Event Break)</td>
+                    <td class="table-entry">Snack/Event Break</td>
                 </tr>
                 <tr>
                     <td class="table-entry">4:30 </td>
