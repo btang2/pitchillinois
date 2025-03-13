@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>PitchIllinois Hackathon</title>
+    <title>PitchIllinois</title>
     <link rel="icon" type="image/x-icon" href="https://pitchillinois.web.illinois.edu/logoicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 <style>
@@ -34,7 +34,24 @@ p {
     font-family: 'Open Sans', sans-serif;
     color: white;
 }
+a:link, a:visited {
+    text-decoration: none;
+}
+a:hover, a:active {
+    text-decoration: underline;
+}
+a.biglink:link, a.biglink:visited, a.biglink:active {
+    color: #F06D7A;
+    text-style: bold;
+    text-decoration: underline;
+}
 
+a.biglink:hover {
+    color: white;
+    text-style: bold;
+    text-decoration: underline;
+}
+    
 .section-div {
     position: relative;
     height: auto;
@@ -60,11 +77,16 @@ p {
     padding-top: 4%;
 }
 
-.topnav a{
+.topnav a:link, a:visited, a:active {
     text-decoration: none;
     color: #F06D7A;
 }
 
+.topnav a:hover {
+    text-decoration: underline;
+    color: white;
+}
+    
 .animated-text {
     background: linear-gradient(to right, #F06D7A, #F9865D, #A660AB, #D46197, #F06D7A);
     -webkit-background-clip: text;
@@ -188,10 +210,16 @@ p {
     margin-top: 3%;
 }
 
-.footer-nav a{
+.footer-nav a:link, a:visited, a:active {
     text-decoration: none;
     color: white;
 }
+
+.footer-nav a:hover {
+    text-decoration: underline;
+    color: #F06D7A;
+}
+
 
 .schedule-table {
     border-collapse: separate;
@@ -362,29 +390,16 @@ p {
             <a href="#judges">Judges and Mentors</a>
             <a href="#leadership">Leadership</a>
         </nav>
-        <h1 style="font-size: 150px; font-family: 'Poiret One', cursive; color: #F06D7A; margin-top: 5%;"><b>pitchillinois</b></h1>
+        <h1 style="font-size: 150px; font-family: 'Poiret One', cursive; color: #F06D7A; margin-top: 5%;"><b>pitchillinois:</b></h1>
         <h3 style="color: white; font-family: 'Courier New', monospace; font-size: 60px">build <span style="color: #F9865D;">tomorrow.</span></h3>
-        <br><h4 style="color: white; font-family: 'Courier New', monospace; font-size: 60px; margin-top: 2%;">University Laboratory High School >>> Champaign, Illinois</h4>
-        <h4 style="color: #F9865D; font-family: 'Courier New', monospace; font-size: 30px;">February 24, 2024</h4>
+        <!--<br><h4 style="color: #F9865D; font-family: 'Courier New', monospace; font-size: 42px; ">Urbana, Illinois</h4>-->
+        <br>
+        <br>
+        <br>
+        <a class = "biglink" href="https://forms.gle/63duUaWBvhWaH8MBA" target="_blank" style= "font-family: 'Open Sans', sans-serif, bold; font-size: 42px; margin-top: 10%;">2025 Early Access Mailing List</a>
+        <!--<h4 style="color: #F9865D; font-family: 'Courier New', monospace; font-size: 30px;">February 24, 2024</h4>-->
     </div>
-    <div class="section-div">
-        <h4 class="animated-text" style="text-align: center; font-size: 50px; margin-bottom: 50px;">Thank you to all who contributed to our event!</h4>
-        <div class="wrapper" style="justify-content: center; align-items: center;">
-            <i id="left" class="fa-solid fa-angle-left"></i>
-            <div class="carousel" style="justify-content: center; align-items: center;">
-                <img src="../images/brainstormpic.jpg" alt="img" draggable="false">
-                <img src="../images/brainstormpic2.jpg" alt="img" draggable="false">
-                <img src="../images/snacktime.jpg" alt="img" draggable="false">
-                <img src="../images/lunchpic.jpg" alt="img" draggable="false">
-                <img src="../images/visualizationpic1.jpg" alt="img" draggable="false">
-                <img src="../images/visualizationpic2.jpg" alt="img" draggable="false">
-                <img src="../images/presentationpic.jpg" alt="img" draggable="false">
-                <img src="../images/winnerpic.jpg" alt="img" draggable="false">
-                <img src="../images/grouppic.jpg" alt="img" draggable="false">
-            </div>
-            <i id="right" class="fa-solid fa-angle-right"></i>
-        </div>
-    </div>
+    
     <div class="section-div" id="mission">
         <div class="div-center">
             <div class="about-container">
@@ -393,9 +408,28 @@ p {
             </div>
         </div>
     </div>
+    <div class="section-div">
+        <h4 class="animated-text" style="text-align: center; font-size: 50px; margin-bottom: 50px;">PitchIllinois 2024 -- Thank you for joining us!</h4>
+        <!--<h4 style="color: #F9865D; font-family: 'Courier New', monospace; font-size: 30px;">February 24, 2024</h4>-->
+        <div class="wrapper" style="justify-content: center; align-items: center;">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="carousel" style="justify-content: center; align-items: center;">
+                <img src="https://raw.githubusercontent.com/btang2/pitchillinois/main/Images/brainstormpic.jpg" alt="img" draggable="false">
+                <img src="https://raw.githubusercontent.com/btang2/pitchillinois/main/Images/brainstormpic2.jpg" alt="img" draggable="false">
+                <img src="https://raw.githubusercontent.com/btang2/pitchillinois/main/Images/snacktime.jpg" alt="img" draggable="false">
+                <img src="https://raw.githubusercontent.com/btang2/pitchillinois/main/Images/lunchpic.jpg" alt="img" draggable="false">
+                <img src="https://raw.githubusercontent.com/btang2/pitchillinois/main/Images/visualizationpic1.jpg" alt="img" draggable="false">
+                <img src="https://raw.githubusercontent.com/btang2/pitchillinois/main/Images/visualizationpic2.jpg" alt="img" draggable="false">
+                <img src="https://raw.githubusercontent.com/btang2/pitchillinois/main/Images/presentationpic.jpg" alt="img" draggable="false">
+                <img src="https://raw.githubusercontent.com/btang2/pitchillinois/main/Images/winnerpic.jpg" alt="img" draggable="false">
+                <img src="https://raw.githubusercontent.com/btang2/pitchillinois/main/Images/grouppic.jpg" alt="img" draggable="false">
+            </div>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+    </div>
     <div class="section-div" id="details">
         <h2 class="underline">Details</h2>
-        <p style="text-align: center; margin-top: 5%">PitchIllinois will be held on <b>February 24, 2024</b> from 8:30am-6pm at the <b>Univeristy Laboratory High School and neighboring facilities</b> in Champaign, Illinois. More details to come.</p>
+        <p style="text-align: center; margin-top: 5%">PitchIllinois will be held on <b>February 24, 2024</b> from 8:30am-6pm at the <b>University Laboratory High School and neighboring facilities</b> in Urbana, Illinois. More details to come.</p>
         <div class="div-center">
             <div class="details-container">
                 <h2 style="color: white; margin-bottom: 5%;">Who?</h2>
@@ -403,11 +437,11 @@ p {
             </div>
             <!--<div class="details-container">-->
             <!--    <h2 style="color: white; margin-bottom: 5%;">What?</h2>-->
-            <!--    <h3 class="animated-text" style="font-size: 50px;">PitchIllinois!</h3>-->
+            <!--    <h3 class="animated-text" style="font-size: 50px;">PitchIllinois: build innovations that matter, together. </h3>-->
             <!--</div>-->
             <div class="details-container">
                 <h2 style="color: white; margin-bottom: 5%;">When?</h2>
-                <h3 class="animated-text" style="font-size: 32px;">February 24, 2024 <br>from 8:30am-6pm!</h3>
+                <h3 class="animated-text" style="font-size: 32px;">February 24, 2024 <br>PitchIllinois will take place from 8:30am-6pm.</h3>
             </div>
             <div class="details-container">
                 <h2 style="color: white; margin-bottom: 5%;">Where?</h2>
@@ -416,7 +450,7 @@ p {
         </div>
     </div>
     <div class="section-div" id="schedule">
-        <h2 class="underline">(Tentative) Schedule</h2>
+        <h2 class="underline">PitchIllinois 2024 Schedule</h2>
         <table class="div-center schedule-table">
             <tbody>
                 <tr>
@@ -441,7 +475,7 @@ p {
                 </tr>
                 <tr>
                     <td class="table-entry">11:00 </td>
-                    <td class="table-entry">Snack/Event Break(?)</td>
+                    <td class="table-entry">Snack/Event Break</td>
                 </tr>
                 <tr>
                     <td class="table-entry">12:30 </td>
@@ -449,7 +483,7 @@ p {
                 </tr>
                 <tr>
                     <td class="table-entry">3:00 </td>
-                    <td class="table-entry">Snack/Event Break(?)</td>
+                    <td class="table-entry">Snack/Event Break</td>
                 </tr>
                 <tr>
                     <td class="table-entry">4:30 </td>
@@ -457,7 +491,7 @@ p {
                 </tr>
                 <tr>
                     <td class="table-entry">5:00 </td>
-                    <td class="table-entry">Team Pitch Presentations (times vary)</td>
+                    <td class="table-entry">Team Pitch Presentations</td>
                 </tr>
                 <tr>
                     <td class="table-entry">5:30 </td>
